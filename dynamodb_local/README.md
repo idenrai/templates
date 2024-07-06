@@ -1,6 +1,10 @@
 # DynamoDB Local
 
-DynamoDB 를 로컬 환경에서 구동.
+DynamoDB 를 로컬 환경에서 구동할 수 있도록 최소한의 설정을 준비
+
+<https://hub.docker.com/r/amazon/dynamodb-local>
+
+<https://hub.docker.com/r/aaronshaf/dynamodb-admin>
 
 ## 준비물
 
