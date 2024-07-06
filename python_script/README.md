@@ -38,6 +38,10 @@ poetry shell
 
 동일 리포지토리의 `dynamodb_local` 를 참조
 
+#### 환경변수
+
+`.dev.env.sample` 을 복사하여 `.dev.env` 파일을 작성
+
 ### Run
 
 #### search_sample
