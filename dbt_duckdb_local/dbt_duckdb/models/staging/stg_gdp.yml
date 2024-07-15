@@ -1,0 +1,23 @@
+# models/staging/stg_gdp.yml
+version: 2
+
+models:
+  - name: stg_gdp
+    tests:
+      - unique:
+          column_name: "(year || '-' || quarter)"
+    columns:
+      - name: year
+        tests:
+          - not_null
+      - name: quarter
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["Q1", "Q2", "Q3", "Q4"]
+      - name: ten_years
+        tests:
+          - not_null
+      - name: gdp
+        tests:
+          - not_null
