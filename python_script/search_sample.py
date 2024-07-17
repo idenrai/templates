@@ -64,8 +64,15 @@ def execute():
     response = document_table.scan(
         FilterExpression=Key('created_at').lt(target_date) & Attr('status').eq('INSERTED')
     )
-
     target_documents = response['Items']
+
+    while 'LastEvaluatedKey' in response:
+        response = document_table.scan(
+            FilterExpression=Key('created_at').lt(target_date) & Attr('status').eq('INSERTED'),
+            ExclusiveStartKey=response['LastEvaluatedKey']
+        )
+        target_documents.extend(response['Items'])
+
     save_to_json(target_db_file, target_documents)
 
     logger.info(f"DB file path: {target_db_file}")
