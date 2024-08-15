@@ -8,3 +8,13 @@
   - DynamoDB 를 로컬 환경에서 구동할 수 있도록 최소한의 설정을 준비
 - python_script
   - 데이터 입출력 등의 간단한 처리를 위한 Python script 를 작성함에 있어, 최소한의 설정을 준비
+
+## TBD
+
+만들어 두고 싶은 내용
+
+- aws_local
+  - localstack + terraform-local을 이용한 로컬 테라폼 검증 환경 구축
+- streamlit_chatbot
+  - streamlit으로 간단하게 챗봇 PoC가 가능하도록 준비
+  - openai & gemini api 가 사용 가능하도록 할 것
