@@ -165,3 +165,5 @@ envs/*.env
 logs/*
 intermediate/*
 .DS_Store
+
+.server/__pycache__/
