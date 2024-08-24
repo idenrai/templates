@@ -166,4 +166,5 @@ logs/*
 intermediate/*
 .DS_Store
 
-.server/__pycache__/
+*/__pycache__/
+prototype.db
