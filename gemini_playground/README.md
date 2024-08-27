@@ -1,4 +1,4 @@
-# gemini_plauground
+# gemini_playground
 
 [Google AI Gemini API](https://ai.google.dev/gemini-api) 를 이용하여 간단한 챗봇 작성
 
