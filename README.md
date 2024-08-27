@@ -10,3 +10,5 @@
   - 데이터 입출력 등의 간단한 처리를 위한 Python script 를 작성함에 있어, 최소한의 설정을 준비
 - prototype
   - [Streamlit](https://streamlit.io/) 과 [Flask](https://flask.palletsprojects.com/en/3.0.x/) 를 이용한 프로토타입 개발 및 [ngrok](https://ngrok.com/) 를 통한 외부 공개
+- gemini_playground
+  - [Google AI Gemini API](https://ai.google.dev/gemini-api) 를 이용하여 간단한 챗봇 작성
