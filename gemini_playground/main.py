@@ -94,6 +94,7 @@ def execute():
         st.session_state["chat_history"].append(
             {"role": "assistant", "content": response.text}
         )
+        logger.info(f"History: {st.session_state["chat_history"]}")
 
 
 if __name__ == "__main__":
